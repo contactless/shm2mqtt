@@ -1,6 +1,6 @@
 .PHONY: all prepare clean
 
-DEB_TARGET_ARCH ?= armhf
+DEB_TARGET_ARCH ?= armel
 
 ifeq ($(DEB_TARGET_ARCH),armel)
 GO_ENV := GOARCH=arm GOARM=5 CC_FOR_TARGET=arm-linux-gnueabi-gcc CC=$$CC_FOR_TARGET CGO_ENABLED=1
@@ -36,4 +36,4 @@ install:
 
 
 deb: prepare
-	CC=arm-linux-gnueabihf-gcc dpkg-buildpackage -b -aarmhf -us -uc
+	CC=arm-linux-gnueabi-gcc dpkg-buildpackage -b -aarmel -us -uc
