@@ -1,0 +1,12 @@
+Source: shm2mqtt
+Maintainer: --
+Section: misc
+Priority: optional
+Standards-Version: 1.0.0
+Build-Depends: debhelper (>= 9), pkg-config
+
+Package: shm2mqtt
+Architecture: armel armhf
+Depends: ${misc:Depends}
+Breaks: 
+Description: shm2mqtt

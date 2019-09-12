@@ -1,0 +1,3 @@
+#!/bin/sh
+update-rc.d shm2mqtt defaults
+invoke-rc.d shm2mqtt start
