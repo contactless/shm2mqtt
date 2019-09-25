@@ -15,7 +15,7 @@ ifeq ($(DEB_TARGET_ARCH),i386)
 GO_ENV := GOARCH=386 CC=i586-linux-gnu-gcc
 endif
 
-all: clean shm2mqtt_
+all: 
 
 clean:
 	rm -rf shm2mqtt
@@ -23,7 +23,7 @@ clean:
 amd64:
 	$(MAKE) DEB_TARGET_ARCH=amd64
 
-shm2mqtt: *_.go
+shm2mqtt: *.go
 	$(GO_ENV) go get github.com/eclipse/paho.mqtt.golang
 	$(GO_ENV) go get golang.org/x/sys/unix
 	$(GO_ENV) go get golang.org/x/text/encoding/charmap  
