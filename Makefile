@@ -15,10 +15,10 @@ ifeq ($(DEB_TARGET_ARCH),i386)
 GO_ENV := GOARCH=386 CC=i586-linux-gnu-gcc
 endif
 
-all: 
+all: clean shm2mqtt
 
 clean:
-	rm -rf shm2mqtt
+	
 
 amd64:
 	$(MAKE) DEB_TARGET_ARCH=amd64
