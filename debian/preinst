@@ -1,3 +1,2 @@
 #!/bin/sh
 rm -f /usr/bin/shm2mqtt
-rm -f /usr/bin/ping_s1
