@@ -27,9 +27,6 @@ shm2mqtt: *.go
 	$(GO_ENV) go get github.com/eclipse/paho.mqtt.golang
 	$(GO_ENV) go get golang.org/x/sys/unix
 	$(GO_ENV) go get golang.org/x/text/encoding/charmap  
-	$(GO_ENV) go set GOOS=linux
-	$(GO_ENV) go set GOARCH=arm
-	$(GO_ENV) go set GOARM=7
 	$(GO_ENV) go build
 
 install:
