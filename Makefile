@@ -32,6 +32,7 @@ shm2mqtt: *.go
 install:
 	mkdir -p $(DESTDIR)/usr/bin/ $(DESTDIR)/etc/init.d/
 	install -m 0755 shm2mqtt $(DESTDIR)/usr/bin/
+	install -m 0755 ping_s1 $(DESTDIR)/usr/bin/
 	install -m 0755 initscripts/shm2mqtt $(DESTDIR)/etc/init.d/
 
 
