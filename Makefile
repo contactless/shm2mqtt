@@ -15,7 +15,7 @@ ifeq ($(DEB_TARGET_ARCH),i386)
 GO_ENV := GOARCH=386 CC=i586-linux-gnu-gcc
 endif
 
-all: #clean shm2mqtt
+all:
 
 clean:
 	rm -rf shm2mqtt
@@ -27,7 +27,7 @@ shm2mqtt: *.go
 	$(GO_ENV) go get github.com/eclipse/paho.mqtt.golang
 	$(GO_ENV) go get golang.org/x/sys/unix
 	$(GO_ENV) go get golang.org/x/text/encoding/charmap  
-	#$(GO_ENV) go build
+
 
 install:
 	mkdir -p $(DESTDIR)/usr/bin/ $(DESTDIR)/etc/init.d/
