@@ -1,0 +1,6 @@
+shm2mqtt (1.0.0) stable; urgency=medium
+
+  * debianization
+
+ -- Yan Yanin <ianin@wirenboard.ru>  Mon, 11 Sep 2019 06:49:00 +0300
+
